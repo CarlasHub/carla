@@ -17,8 +17,8 @@ title: Carla's Hub
 email: carlawlondon@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   "Carla’s Hub | Personal page and portfolio"
-baseurl: "carlashub/" # the subpath of your site, e.g. /blog
-url: "carlashub" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/carlashub" # the subpath of your site, e.g. /blog
+url: "https://carlashub.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  CarlasHub
 pathToBlogImagesBin: /assets/images/blog/
 

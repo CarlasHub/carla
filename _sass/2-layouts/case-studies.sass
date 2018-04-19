@@ -1,0 +1,229 @@
+header.case-studies-header-main
+	position: relative
+	z-index: 1
+	display: flex
+	flex-direction: column
+	align-items: left
+	justify-content: center
+	width: 100%
+	height: 750px
+	background:
+		size: cover
+		position: center center 
+		repeat: no-repeat
+	//border-bottom: solid $white 1px 
+	@media screen and (max-width: 800px)
+		align-items: center 
+		justify-content: center
+.overlay-dark
+	position: absolute
+	z-index: 2
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: $black //
+	opacity: 0.37
+.case-studies-title
+	display: flex
+	flex-direction: column
+	position: relative
+	max-width: 600px
+	z-index: 5
+	color: orange
+	text-align: center
+	padding-top: 50px
+	padding-left: 20px
+	justify-content: center
+	@media screen and (max-width: 800px)
+		text-align: center
+	h1
+		max-width: 600px
+		//font-family: 'Indie Flower', cursive
+		font-size: 3.125em
+		font-weight: 900
+		line-height: 1.2em
+		padding: 0 20px 5px 20px 
+		color: white
+		margin: 30px 0 0 0
+		@media screen and (max-width: 500px)
+			font-size: 2.5em
+		@media screen and (max-width: 400px)
+			font-size: 2.1875em
+		@media screen and ( max-width: 360px)
+			font-size: 1.875em
+	h3
+		font-size: 1.5em
+		text-align: center 
+		color: yellow
+		font-weight: 200 
+
+	a.see-our-story, .color-game
+		display: inline-block
+		color: $white
+		font-size: 0.75
+		font-weight: 600
+		padding: 10px 30px
+		border: solid 1px  $white
+		text-align: center
+		max-width: 100px
+		border-radius: 9px
+		margin: 30px 0 5px 0 
+		line-height: 1em
+		margin: 0 auto 
+		//margin: 7%
+		&:hover
+			background-color: $primaria-blue
+			//border: solid 3px $primaria-blue
+			color: white
+			border: none
+	a.see-our-story
+		margin-top: 8px
+		
+
+.caseStudiesWrapper
+	width: 100%
+	border: 5px 20px
+	.caseStudyPreview
+		margin: 80px 0
+		height: 500px
+		color: white
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		
+		.text
+			max-width: 500px
+			margin: 0 20px 0 100px 
+			
+			h2
+				font-size: 2.5em 
+				font-weight: 300
+				color: white
+				text-align: center
+				
+			p
+				font-size: 1em 
+				margin: 10px 0
+				font-weight: 500
+				line-height: 2.5em
+				text-align: justify
+				text-justify: inter-word
+				color: $white
+				opacity: 0.7
+				transition: all 0.15s ease-in-out
+				&:hover
+					opacity: 1
+				
+			h6
+				font-size: .6em
+				font-width: 800
+				color: grey
+				margin-bottom: 30px
+			a
+				display: inline-block 
+				color: yellow 
+				font-weight: 700
+				font-size: .8em
+				padding: .25em 1em 
+				border: 2px solid yellow 
+				border-radius: 3px 
+				padding-right: 20px
+				&:hover
+					color: $primaria
+					border: solid 2px $primaria
+		.imageWrapper
+			width: 50%
+			height: 100%
+			margin-right: 10px
+			border-radius: 4px
+			img
+				height: 100%
+				width: auto
+		@media screen and(max-width: 800px)
+			flex-direction: column
+			height: auto
+			.text
+				margin: 0 20px 50px 20px 
+			.imageWrapper
+				height: 400px
+				margin-right: 35%
+				margin-left: 0 
+				padding-left: 5px
+				padding-right: 5px
+	.caseStudyPreview.reverse
+		margin: 80px 0
+		height: 500px
+		color: white
+		display: flex
+		flex-direction: row-reverse
+		justify-content: space-between
+		align-items: center
+		
+		.text
+			max-width: 500px
+			margin: 100px 20px 20px 0
+			
+			h2
+				font-size: 2.5em 
+				font-weight: 300
+				color: $white
+			p
+				font-size: 1em 
+				margin: 10px 0
+				font-weight: 500
+				line-height: 2.5em
+				text-align: justify
+				text-justify: inter-word
+				color: $white
+				opacity: 0.7
+				transition: all 0.15s ease-in-out
+				&:hover
+					opacity: 1
+				
+			h6
+				font-size: .6em
+				font-width: 800
+				color: grey
+				margin-bottom: 30px
+				margin-right: 20px
+				text-align: right
+			a
+				display: inline-block 
+				color: yellow 
+				font-weight: 700
+				font-size: .8em
+				padding: .25em 1em 
+				border: 2px solid yellow 
+				border-radius: 3px 
+				float: right
+				margin-right: 20px
+				&:hover
+					color: $primaria
+					border: solid 2px $primaria
+					
+		.imageWrapper
+			width: 50%
+			height: 100%
+			margin-right: 10px
+			border-radius: 4px
+			img
+				height: 100%
+				width: auto
+				float: right
+		@media screen and(max-width: 800px)
+			flex-direction: column
+			height: auto
+			.text
+				margin: 0 20px 50px 20px 
+			.imageWrapper
+				height: 400px
+				margin-left: 25%
+				margin-right: 0 
+				padding-right: 5px
+				padding-left: 5px
+				
+
+			
+

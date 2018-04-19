@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% for post in site.posts offset:0 limit: 1 %}
+<header class="blog-index-header-main" style="background-image: url('{{ site.baseurl }}/assets/images/light.jpg');">
+ 	
+	<div class="overlay-blog"></div>
+	{% include nav.html %}
+	<div class="blog-index-title">
+		<h1 class="featured-blog-post-title">{{ post.title }}</h1><br>
+		<a href="{{post.url}}" class="read-featured-blog-post">Read more</a>
+		
+	</div>
+</header>
+{% endfor %}
+<div class="blogIndexWrapper">
+	{% for post in site.posts %}
+		<div class="blogPostContainer">
+			<a href="{{post.url}}" class="blogPostFeaturedImg" style="background-image: url('{{site.url}}{{post.featImage }}');"></a>
+			<a href="" class="blogCategory">{{post.categories}}</a>
+			<a href="{{post.url}}" class="blogTitle">{{post.title}}</a>
+			<p class="blogExcerpt">{{post.excerpt}}</p>
+		</div>
+	{% endfor %}
+</div>

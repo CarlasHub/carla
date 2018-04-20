@@ -22,6 +22,8 @@ url: "https://carlashub.github.io" # the base hostname & protocol for your site,
 github_username:  CarlasHub
 pathToBlogImagesBin: /assets/images/blog/
 
+twitter_path: https://twitter.com/justGosthing
+
 
 # Build settings
 permalink: pretty

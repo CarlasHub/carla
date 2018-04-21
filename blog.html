@@ -16,7 +16,7 @@ layout: default
 <div class="blogIndexWrapper">
 	{% for post in site.posts %}
 		<div class="blogPostContainer">
-			<a href="{{post.url}}" class="blogPostFeaturedImg" style="background-image: url('{{site.url}}{{post.featImage }}');"></a>
+			<a href="{{post.url}}" class="blogPostFeaturedImg" style="background-image: url('{{site.baseurl}}{{post.featImage }}');"></a>
 			<a href="" class="blogCategory">{{post.categories}}</a>
 			<a href="{{post.url}}" class="blogTitle">{{post.title}}</a>
 			<p class="blogExcerpt">{{post.excerpt}}</p>

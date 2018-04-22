@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<header class="case-studies-header-main" style="background-image: url('{{ site.baseurl}}/assets/images/blog/keeponcoding.jpg');">
+
+<header class="case-studies-header-main" style="background-image: url('{{ "/assets/images/blog/keeponcoding.jpg" | relative_url }}');">
 	<div class="overlay-dark"></div>
 	{% include nav.html %}
 	<div class=" case-studies-title">
@@ -16,10 +17,10 @@ layout: default
 			<h2 id="projects">Responsive Floors</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 			<h6>Web  Design / Development</h6>
-			<a href="{{site.baseurl}}/casestudies/case-one.html">View Study</a>
+			<a href="{{ "/casestudies/case-one/" | relative_url }}">View Study</a>
 		</div>
 		<div class="imageWrapper">
-			<img src="{{site.url}}{{site.baseurl}}/assets/images/responsive.png"/>
+			<img src="{{ "/assets/images/responsive.png" | relative_url }}"/>
 		</div>
 		</div>
 	<div class="caseStudyPreview reverse">
@@ -27,14 +28,18 @@ layout: default
 			<h2 >Responsive Floors</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 			<h6>Web  Design / Development</h6>
-			<a href="{{ site.url }}/casestudies/case-one/">View Study</a>
+			<a href="{{ "/casestudies/case-one/" | relative_url}}">View Study</a>
 		</div>
 		<div class="imageWrapper">
-			<img src="{{site.baseurl}}/assets/images/responsivewhite.png"/>
+			<img src="{{ "/assets/images/responsivewhite.png" | relative_url }}"/>
 		</div>
 		</div>
 	</div>
 
-<!--{% for casestudy in site.casestudies %}
-<a href="{{ casestudy.url }}"> {{ casestudy.company_name }} </a>
-{% endfor %}-->
+<ul>
+  {% for casestudy in site.casestudies %}
+  <li>
+    <a href="{{ casestudy.url | relative_url }}">{{ casestudy.company_name }}</a>
+  </li>
+  {% endfor %}
+</ul>

@@ -9,7 +9,7 @@ layout: default
 	<h1 class="featured-blog-post-title">{{ page.title }}</h1>
 </div>
 <div class="authorCard">
-	<img src="{{ site.url }}/assets/images/profilepic.jpg">
+	<img src="{{relative_url }}/assets/images/profilepic.jpg">
     <small><em>by <a href="">{{ site.data.author[page.author].name }}</a><br>on {{ page.date | date: "%B %e, %Y" }}</em></small>
 </div>
 </header>
@@ -21,11 +21,11 @@ layout: default
 <div class="blogReadMoreWrapper">
 	{% for post in site.posts limit: 3 %}
 		<div class="blogPostContainer">
-			<a href="{{post.url}}" class="blogPostFeaturedImg" style="background-image: url('{{site.url}}{{post.featImage }}');"></a>
+			<a href="{{post.url}}" class="blogPostFeaturedImg" style="background-image: url('{{site.baseurl}}{{post.featImage }}');"></a>
 			<a href="" class="blogCategory">{{post.categories}}</a>
 			<a href="{{post.url}}" class="blogTitle">{{post.title}}</a>
 			<p class="blogExcerpt">{{post.excerpt}}</p>
 		</div>
 	{% endfor %}
 	
-</div>
+</div>href="{{ 'post.url" | relative_url }}"

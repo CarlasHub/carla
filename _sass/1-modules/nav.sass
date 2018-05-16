@@ -30,6 +30,9 @@ ul.navigation
 	@media screen and (max-width: 600px)
 		display: none
 	a
+		text-shadow: 0 0 15px red
+		animation: blin 0.5s linear, glowh1 1.5s ease-in-out infinite
+		-webkit-animation: blin 0.5s linear, glowh1 1.5s ease-in-out infinite
 		color: $primaria
 		transition: all 0.15s ease-in 
 		font-size: 1.1em
@@ -66,6 +69,7 @@ li:last-of-type
 
 .nav-toggle-open-wrapper.nav-dark
 	svg: $primaria 
+		
 	&:hover
 		line: $primaria-blue //n3 re-watch
 
@@ -86,7 +90,7 @@ li:last-of-type
 	width: 300px
 	height: 100%
 	padding: 35px 20px 35px 0
-	background: lightgrey
+	background:  #8D021F
 	transform: translateX(300px)
 
 .internal-nav-links-wrapper, .external-nav-links-wrapper
@@ -126,7 +130,7 @@ hr
 		repeat: no-repeat 
 
 .internal-link-icon-home
-	background-image: url('../images/icons/home.svg')
+	background-image: url('../images/profilepic.jpg')
 .internal-link-icon-case-studies
 	background-image: url('../images/icons/case.svg')
 .internal-link-icon-blog

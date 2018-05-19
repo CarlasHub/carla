@@ -10,7 +10,7 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.5-x86-mingw32)
+    eventmachine (1.2.7-x86-mingw32)
     execjs (2.7.0)
     ffi (1.9.23-x86-mingw32)
     forwardable-extended (2.6.0)
@@ -36,8 +36,6 @@ GEM
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
-    jekyll-seo-tag (2.4.0)
-      jekyll (~> 3.3)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
     kramdown (1.16.2)
@@ -47,10 +45,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    minima (2.4.1)
-      jekyll (~> 3.5)
-      jekyll-feed (~> 0.9)
-      jekyll-seo-tag (~> 2.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.2)
@@ -79,7 +73,6 @@ DEPENDENCIES
   jekyll (~> 3.7.3)
   jekyll-autoprefixer
   jekyll-feed (~> 0.6)
-  minima (~> 2.0)
   tzinfo-data
   wdm (~> 0.1.0)
 

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Ceviche+One|Hi+Melody|Indie+Flower&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 @import url("https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display");
+@import url("https://fonts.googleapis.com/css?family=Imprima");
 h4 {
   font-size: 1.375em;
   font-weight: 500;
@@ -9,8 +10,7 @@ h4 {
 
 h5 {
   font-size: 1.355em;
-  font-weight: 900;
-  color: white; }
+  font-weight: 900; }
 
 h6 {
   font-size: 0.75em;

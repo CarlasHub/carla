@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ---
 layout: default
 ---
@@ -43,50 +43,4 @@ layout: default
     <a href="{{ casestudy.url | relative_url }}">{{ casestudy.company_name }}</a>
   </li>
   {% endfor %}
-=======
----
-layout: default
----
-
-<header class="case-studies-header-main" style="background-image: url('{{ "/assets/images/blog/keeponcoding.jpg" | relative_url }}');">
-	<div class="overlay-dark"></div>
-	{% include nav.html %}
-	<div class=" case-studies-title">
-		<h1>Case Studies</h1><br>
-		<a class="see-our-story" href="#projects">Our Story</a>
-	</div>
-</header>
-
-<div class="caseStudiesWrapper">
-	<div class="caseStudyPreview">
-		<div class="text">
-			<h2 id="projects">Responsive Floors</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			<h6>Web  Design / Development</h6>
-			<a href="{{ "/casestudies/case-one/" | relative_url }}">View Study</a>
-		</div>
-		<div class="imageWrapper">
-			<img src="{{ "/assets/images/blog/keeponcoding.jpg" | relative_url }}"/>
-		</div>
-		</div>
-	<div class="caseStudyPreview reverse">
-		<div class="text">
-			<h2 >Responsive Floors</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			<h6>Web  Design / Development</h6>
-			<a href="{{ "/casestudies/case-one/" | relative_url}}">View Study</a>
-		</div>
-		<div class="imageWrapper">
-			<img src="{{ "/assets/images/blog/keeponcoding.jpg" | relative_url }}"/>
-		</div>
-		</div>
-	</div>
-
-<ul>
-  {% for casestudy in site.casestudies %}
-  <li>
-    <a href="{{ casestudy.url | relative_url }}">{{ casestudy.company_name }}</a>
-  </li>
-  {% endfor %}
->>>>>>> 645c546d4ace8b350d6155c6257bec7bc2e1b075
 </ul>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Ceviche+One|Hi+Melody|Indie+Flower&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 @import url("https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display");
@@ -30,3 +31,37 @@ hr {
   opacity: 0.1; }
 
 /*# sourceMappingURL=stylish.css.map */
+=======
+@import url("https://fonts.googleapis.com/css?family=Ceviche+One|Hi+Melody|Indie+Flower&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display");
+h4 {
+  font-size: 1.375em;
+  font-weight: 500;
+  color: black;
+  line-height: 1.227em; }
+
+h5 {
+  font-size: 1.355em;
+  font-weight: 900;
+  color: white; }
+
+h6 {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black; }
+
+small {
+  font-size: 0.55em;
+  font-weight: 300;
+  color: black;
+  text-transform: uppercase; }
+
+hr {
+  border-style: solid;
+  color: #0081AB;
+  opacity: 0.1; }
+
+/*# sourceMappingURL=stylish.css.map */
+>>>>>>> 645c546d4ace8b350d6155c6257bec7bc2e1b075

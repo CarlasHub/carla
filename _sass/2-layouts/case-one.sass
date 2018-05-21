@@ -1,5 +1,5 @@
 body
-	background-color: #06061C//#000034
+	background-color: black
 .case-one-content-wrapper
 	width: 100%
 	max-width: 1000px
@@ -10,6 +10,14 @@ body
 		display: flex
 		flex-direction: row
 		justify-content: space-between
+		color: white
+		border-left: solid #0081AB 3px 
+		border-right: solid #0081AB 3px 
+		ul
+			list-style: square
+		li
+			padding-top: 10px
+		
 		b
 			font-weight: 700
 		a
@@ -24,7 +32,7 @@ body
 			flex-wrap: wrap
 			width: 70%
 			p
-				color: $white
+				color: white
 				opacity: 0.80
 				line-height: 1.5em
 				padding: 1.5em 0
@@ -32,13 +40,42 @@ body
 				font-size: 1em
 				font-weight: 300
 			b
-				color: $primaria
+				color: lightgrey
 			.bio
 				width: 100%
 				padding: 0.75em 0
+				text-align: center
 			.challenge, .result
 				width: 45%
 				flex: 0 0 auto
+				color: white
+				padding-right: 20px
+				
+			.challenge
+				background-color: #0081AB 
+				color: white
+			.result
+				text-align: center
+
+		a.see-our-story, .color-game
+			display: block
+			color: #0081AB
+			font-size: 0.75
+			font-weight: 600
+			padding: 10px 30px
+			border: solid 1px  #0081AB
+			text-align: center
+			max-width: 150px
+			border-radius: 9px
+			margin: 30px 0 5px 0 
+			line-height: 1em
+			margin: 10px auto 
+			//margin: 7%
+			&:hover
+				background-color: $primaria-blue
+				//border: solid 3px $primaria-blue
+				color: white
+				border: none
 		.side
 			display: flex
 			flex-direction: column 
@@ -51,6 +88,8 @@ body
 				padding: 1.5em 0
 				margin: 0
 				color: grey
+				a.social
+					color: grey
 				li:first-of-type
 					margin-top: .25em
 					font-size: 1.2em
@@ -83,8 +122,10 @@ body
 			.side, ul li.a	
 				align-items: center
 				text-align: center 
-			li.a
-				padding-right: 0
+				li.a
+					padding-right: 0
+					color: white
+
 hr
 	margin: 20px 0 0 0
 
@@ -110,9 +151,9 @@ img
 		flex: 1 1 auto
 		margin: 0.5%
 		width: 25%
-		box-shadow: 0px 2px 5px 0px $primaria
+		box-shadow: 0px 2px 5px 0px #006788
 		&:hover
-			box-shadow: 0 5px 15px 5px $primaria
+			box-shadow: 0 5px 15px 5px #006788
 			tranform: translateY(-2px)
 
 

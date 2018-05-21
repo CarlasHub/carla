@@ -7,8 +7,10 @@ layout: default
 	{% include nav.html %}
 	<div class=" case-studies-title">
 		<h1>Case Studies</h1><br>
-		<h3>Color Game</h3>
-		<a class="color-game" href="">Play First</a>
+		<h3>{{page.title}}</h3>
+		<br><br>
+		<a class="color-game" href="#bio">See challenge</a>
+		<a class="color-game" href="{{page.github}}">See the source code</a>
 	</div>
 </header>
 {{content}}

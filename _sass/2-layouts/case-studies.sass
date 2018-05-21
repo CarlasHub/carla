@@ -6,7 +6,7 @@ header.case-studies-header-main
 	align-items: left
 	justify-content: center
 	width: 100%
-	height: 750px
+	height: 100vh
 	background:
 		size: cover
 		position: center center 
@@ -53,24 +53,24 @@ header.case-studies-header-main
 		@media screen and ( max-width: 360px)
 			font-size: 1.875em
 	h3
-		font-size: 1.5em
+		font-size: 1.005em
 		text-align: center 
-		color: yellow
+		color: lightgrey
 		font-weight: 200 
 
 	a.see-our-story, .color-game
-		display: inline-block
-		color: $white
+		display: block
+		color: #006788
 		font-size: 0.75
-		font-weight: 600
+		font-weight: 700
 		padding: 10px 30px
-		border: solid 1px  $white
+		border: solid 3px  #006788
 		text-align: center
-		max-width: 100px
+		max-width: 150px
 		border-radius: 9px
 		margin: 30px 0 5px 0 
 		line-height: 1em
-		margin: 0 auto 
+		margin: 10px auto 
 		//margin: 7%
 		&:hover
 			background-color: $primaria-blue
@@ -123,35 +123,38 @@ header.case-studies-header-main
 				margin-bottom: 30px
 			a
 				display: inline-block 
-				color: yellow 
+				color: #006788
 				font-weight: 700
 				font-size: .8em
 				padding: .25em 1em 
-				border: 2px solid yellow 
+				border: 2px solid #006788
 				border-radius: 3px 
 				padding-right: 20px
 				&:hover
-					color: $primaria
-					border: solid 2px $primaria
+					color: green
+					border: solid 2px green
 		.imageWrapper
 			width: 50%
 			height: 100%
-			margin-right: 10px
+			margin-right: 100px
 			border-radius: 4px
 			img
 				height: 100%
-				width: auto
+				margin-right: 30px
+				border-radius: 10px
+				
 		@media screen and(max-width: 800px)
 			flex-direction: column
 			height: auto
 			.text
 				margin: 0 20px 50px 20px 
 			.imageWrapper
-				height: 400px
-				margin-right: 35%
-				margin-left: 0 
+				height: 300px
+				margin-left: 50px
+				margin-right: 10px
 				padding-left: 5px
 				padding-right: 5px
+				width: auto
 	.caseStudyPreview.reverse
 		margin: 80px 0
 		height: 500px

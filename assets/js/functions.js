@@ -13,4 +13,6 @@ $(function(){
     $('.text-animation').removeClass('hidden').delay(4000).fadeOut('slow');
   }, 500);
 });
+
+
   

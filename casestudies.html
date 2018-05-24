@@ -22,6 +22,7 @@ layout: default
 			<img src="{{ "/assets/images/rest.jpg" | relative_url }}"/>
 		</div>
 		</div>
+	<hr>
 	<div class="caseStudyPreview reverse">
 		<div class="text">
 			<h2 >RGB color guessing game </h2>
@@ -34,16 +35,13 @@ layout: default
 		</div>
 		</div>
 	</div>
+<hr>
 
 <ul>
   {% for casestudy in site.casestudies %}
   <li>
-    <a href="{{ casestudy.url | relative_url }}">{{ casestudy.company_name }}</a>
+    <a  style=" display: none" href="{{ casestudy.url | relative_url }}">{{ casestudy.company_name }}</a>
   </li>
   {% endfor %}
 </ul>
 
-
-<script type="text/javascript">
-alert("        Under Construction will be adding more projects and other elements soon! :)" +  "       Thanks for visiting" +       "          Carla");
-</script>

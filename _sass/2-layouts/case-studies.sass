@@ -60,7 +60,8 @@ header.case-studies-header-main
 
 	a.see-our-story, .color-game
 		display: block
-		color: #006788
+		color: lightgrey
+		background-color: #006788
 		font-size: 0.75
 		font-weight: 700
 		padding: 10px 30px
@@ -73,21 +74,26 @@ header.case-studies-header-main
 		margin: 10px auto 
 		//margin: 7%
 		&:hover
-			background-color: $primaria-blue
+			background-color: transparent
 			//border: solid 3px $primaria-blue
 			color: white
-			border: none
+			border: #006788 solid
+			color: #006788
 	a.see-our-story
 		margin-top: 8px
 		
 
 .caseStudiesWrapper
+	align-items: center
+	justify-content: center
+	background-color: black
 	width: 100%
-	border: 5px 20px
-	margin-left: 10px
-	margin-right: 10px
+	height: 100%
+	border: 0
+	margin-left: 0
+	margin-right: 0
 	.caseStudyPreview
-		margin: 80px 0
+		margin: 5px 0
 		height: 500px
 		color: white
 		display: flex
@@ -96,22 +102,22 @@ header.case-studies-header-main
 		
 		.text
 			max-width: 500px
-			margin: 0 20px 0 100px 
+			margin: auto
 			
 			h2
 				font-size: 2.5em 
 				font-weight: 300
-				color: white
+				color: #006788
 				text-align: center
 				
 			p
 				font-size: 1em 
 				margin: 10px 0
-				font-weight: 500
+				font-weight: 700
 				line-height: 2.5em
 				text-align: justify
 				text-justify: inter-word
-				color: $white
+				color: white
 				opacity: 0.7
 				transition: all 0.15s ease-in-out
 				&:hover
@@ -124,11 +130,11 @@ header.case-studies-header-main
 				margin-bottom: 30px
 			a
 				display: inline-block 
-				color: yellow
+				color: #006788
 				font-weight: 700
 				font-size: .8em
 				padding: .25em 1em 
-				border: 2px solid yellow
+				border: 2px solid #006788
 				border-radius: 3px 
 				padding-right: 20px
 				&:hover
@@ -164,23 +170,20 @@ header.case-studies-header-main
 		flex-direction: row-reverse
 		align-items: center
 		
-		.text
-			max-width: 500px
-			margin: 0 100px 0 20px 
-			
-			
-			h2
+		h2
 				font-size: 2.5em 
 				font-weight: 300
-				color: $white
+				color: #006788
+				text-align: center
+				
 			p
 				font-size: 1em 
 				margin: 10px 0
-				font-weight: 500
+				font-weight: 700
 				line-height: 2.5em
 				text-align: justify
 				text-justify: inter-word
-				color: $white
+				color: black
 				opacity: 0.7
 				transition: all 0.15s ease-in-out
 				&:hover
@@ -191,22 +194,18 @@ header.case-studies-header-main
 				font-width: 800
 				color: grey
 				margin-bottom: 30px
-				margin-right: 20px
-				text-align: right
 			a
 				display: inline-block 
-				color: yellow 
+				color: #006788
 				font-weight: 700
 				font-size: .8em
 				padding: .25em 1em 
-				border: 2px solid yellow 
+				border: 2px solid #006788
 				border-radius: 3px 
-				float: right
-				margin-right: 20px
+				padding-right: 20px
 				&:hover
-					color: $primaria
-					border: solid 2px $primaria
-					
+					color: green
+					border: solid 2px green
 		.imageWrapper
 			width: 30%
 			height: 50%
@@ -214,6 +213,7 @@ header.case-studies-header-main
 			border-radius: 4px
 			img
 				height: 100%
+				margin-left: 100px
 				width: auto
 				float: right
 		@media screen and(max-width: 800px)
@@ -228,6 +228,10 @@ header.case-studies-header-main
 				padding-right: 5px
 				padding-left: 5px
 				width: auto
+hr
+	background: #006788
+	color: #006788
+	border: solid #006788 2px
 
 				
 				

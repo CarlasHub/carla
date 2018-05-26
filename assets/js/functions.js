@@ -14,5 +14,10 @@ $(function(){
   }, 500);
 });
 
+    $('.confirmation').on('click', function () {
+        return confirm('Hi there! thanks for visiting my portfolio! Im still in the process of adding projects thats why the page is a bit empty. Soonish will be done thanks!<3 OK?');
+    });
+
+
 
   

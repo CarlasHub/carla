@@ -13,11 +13,20 @@ $(function(){
     $('.text-animation').removeClass('hidden').delay(4000).fadeOut('slow');
   }, 500);
 });
+//$('.popup-bg').hide();
+   // $('.confirmation').on('click', function () {
 
-    $('.confirmation').on('click', function () {
-        return confirm('Hi there! thanks for visiting my portfolio! Im still in the process of adding projects thats why the page is a bit empty. Soonish will be done thanks!<3 OK?');
-    });
 
+$('.popup-bg').hide();
+$('.confirmation').mouseover(function(){
+  $('.popup-bg').show();
+});
+$('.close-btn').click(function(){
+  $('.popup-bg').hide();
+});
+$('.popup-bg').click(function(){
+  $(this).hide();
+});
 
 
   

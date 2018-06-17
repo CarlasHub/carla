@@ -431,7 +431,7 @@ a.home-avatar
 
 
 #skills li
-	color: #C00022
+	color: white
 	padding: 10px 0
 	font-size: 2.3vh
 	text-align: center
@@ -449,7 +449,7 @@ a.home-avatar
 
 
 #table
-	background: black
+	background: #006788
 	clear: both
 	display: table-cell
 	width: 50%
@@ -467,13 +467,12 @@ a.home-avatar
 
 #fringe
 	width: 100%
-	background: black
+	background: #006788
 	height: 70px
 	a
-		position: relative
-		bottom: -5px
+		position: absolute
 		left: 45%
-		width: 70px
+		width: 150px
 		padding: 10px
 		background: #C00022
 		color: white
@@ -482,6 +481,7 @@ a.home-avatar
 		border-radius: 3px
 		border: solid white 1px
 		cursor: pointer
+		text-align: center
 
 
 	
@@ -608,7 +608,6 @@ a.home-avatar
 #contacts
 	height: 100vh
 	width: 100%
-	background-image: url("https://images.pexels.com/photos/245250/pexels-photo-245250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
 	background-size: cover
 	background-repeat: no-repeat
 	display: table
@@ -619,6 +618,7 @@ a.home-avatar
 	flex-direction: column
 	background-color: rgba(0, 0, 0, 0.5)
 	position: relative
+	top: 100px
 	margin: 0 auto
 	margin-top: 10%
 	width: 70%
@@ -666,5 +666,40 @@ a.home-avatar
 	100%
 		transform: rotate(-360deg)
 
+
+.popup-bg
+	position: absolute
+	top: 0
+	left: 0
+	background-color: rgba(0, 0, 0, 0.5)
+	height: 100%
+	width: 100%
+
+
+.popup
+	position: relative
+	top: 20%
+	background-color: white
+	border-radius: 5px
+	margin: 50px auto
+	padding: 20px
+	width: 500px
+	height: 500px
+	z-index: 1000
+	img
+		width: auto
+		height: auto
+
+.close-btn
+	background-color: black
+	color: white
+	position: absolute
+	top: 5px
+	right: 10px
+	border-radius: 50%
+	padding: 2px 5px
+	border: solid black 3px
+	z-index: 1000
+	font-weight: 900
 
 

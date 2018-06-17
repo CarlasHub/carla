@@ -23,7 +23,7 @@ header.case-studies-header-main
 	bottom: 0
 	left: 0
 	background: $black //
-	opacity: 0.37
+	opacity: 0.5
 .case-studies-title
 	display: flex
 	flex-direction: column
@@ -44,7 +44,7 @@ header.case-studies-header-main
 		font-weight: 900
 		line-height: 1.2em
 		padding: 0 20px 5px 20px 
-		color: white
+		color: #31B6FF
 		margin: 30px 0 0 0
 		@media screen and (max-width: 500px)
 			font-size: 2.5em
@@ -60,12 +60,13 @@ header.case-studies-header-main
 
 	a.see-our-story, .color-game
 		display: block
-		color: lightgrey
-		background-color: #006788
+		background-color: transparent
+		//border: solid 3px $primaria-blue
+		border: white solid
+		color: white
 		font-size: 0.75
 		font-weight: 700
 		padding: 10px 30px
-		border: solid 3px  #006788
 		text-align: center
 		max-width: 150px
 		border-radius: 9px
@@ -74,11 +75,10 @@ header.case-studies-header-main
 		margin: 10px auto 
 		//margin: 7%
 		&:hover
-			background-color: transparent
+			border: solid 3px  #31B6FF
 			//border: solid 3px $primaria-blue
-			color: white
-			border: #006788 solid
-			color: #006788
+			color: #31B6FF
+			background-color: transparent
 	a.see-our-story
 		margin-top: 8px
 		
@@ -86,7 +86,7 @@ header.case-studies-header-main
 .caseStudiesWrapper
 	align-items: center
 	justify-content: center
-	background-color: black
+	background-color: #006788
 	width: 100%
 	height: 100%
 	border: 0
@@ -107,7 +107,7 @@ header.case-studies-header-main
 			h2
 				font-size: 2.5em 
 				font-weight: 300
-				color: #006788
+				color: #ff0
 				text-align: center
 				
 			p
@@ -118,7 +118,7 @@ header.case-studies-header-main
 				text-align: justify
 				text-justify: inter-word
 				color: white
-				opacity: 0.7
+				//opacity: 0.7
 				transition: all 0.15s ease-in-out
 				&:hover
 					opacity: 1
@@ -126,20 +126,20 @@ header.case-studies-header-main
 			h6
 				font-size: .6em
 				font-width: 800
-				color: grey
+				color: black
 				margin-bottom: 30px
 			a
 				display: inline-block 
-				color: #006788
+				color: #ff0
 				font-weight: 700
 				font-size: .8em
 				padding: .25em 1em 
-				border: 2px solid #006788
+				border: 2px solid #ff0
 				border-radius: 3px 
 				padding-right: 20px
 				&:hover
-					color: green
-					border: solid 2px green
+					color: white
+					border: solid 2px white
 		.imageWrapper
 			width: 30%
 			height: 50%
@@ -173,7 +173,7 @@ header.case-studies-header-main
 		h2
 				font-size: 2.5em 
 				font-weight: 300
-				color: #006788
+				color: #1A233A
 				text-align: center
 				
 			p
@@ -229,8 +229,8 @@ header.case-studies-header-main
 				padding-left: 5px
 				width: auto
 hr
-	background: #006788
-	color: #006788
+	//background: #FFEC66
+	//color: #FFEC66
 	border: solid #006788 2px
 
 				

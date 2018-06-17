@@ -1,5 +1,6 @@
 
 footer.footer-wrapper
+	background-color: #0b1922 !important
 	width: 100%
 	padding: 100px 20px
 	display: flex
@@ -34,6 +35,7 @@ footer.footer-wrapper
 			margin: auto  
 			text-align: center
 			.label
+				color: white
 				display: inline-block
 				margin: 15px auto 10px auto 
 			input, textarea.form-message
@@ -51,25 +53,25 @@ footer.footer-wrapper
 					color: lightgrey
 					opacity: 0.56
 				&:hover
-					border: solid 3px $primaria
+					border: solid 3px white
 					
 			input::placeholder
 				font-size: 12px
 				opacity: .65
-			button
+			.button
 				background: $primaria
 				color: white
 				transition: all 0.2s ease-in
 				text-align: center
-				width: 100px 
+				width: 150px 
 				height: 30px
 				border: none
 				border-radius: 5px
 				//font-family
 				cursor: pointer
 				&:hover
-					background-color: grey
-					color: darken($primaria, 20%)
+					background-color: white
+					color: red
 					font-weight: 900
 					
 	a.footer-email

@@ -1,89 +1,18 @@
-
-<nav class="nav-wrap">
-<a href="{{site.baseurl}}/" class="nav-logo" style="background-image: url('{{ "/assets/images/logocatwhite.png" | relative_url }}');"></a>
-<ul class="navigation"> 
-<li><a href ="{{ site.baseurl }}/#about">About Carla</a></li>
-<li><a href ="{{ site.baseurl }}/casestudies" class="confirmation">Projects</a></li>
-<li><a href ="{{ site.baseurl }}/blog">Blog</a></li>	
-</ul>
-<!-- mobile nav-->
-<div class="nav-toggle-open-wrapper {% if page.url == '/' %}nav-dark{% endif %}">
-	 <?xml version="1.0" encoding="utf-8"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="18px" viewBox="0 0 24 18" enable-background="new 0 0 24 18" xml:space="preserve">
-      <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="0" y1="9" x2="24" y2="9"/>
-      <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="0" y1="1" x2="24" y2="1"/>
-      <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="0" y1="17" x2="24" y2="17"/>
-    </svg>
-</div>
-<div class="nav-toggle-body-overlay"></div>
-
-<div class="toggled-nav-wrapper">
-	<div class="nav-toggle-close-wrapper">
-		<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.385px" height="18.385px" viewBox="0 0 18.385 18.385" enable-background="new 0 0 18.385 18.385" xml:space="preserve">
-          <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="0.707" y1="17.678" x2="17.678" y2="0.707"/>
-          <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="0.707" y1="0.707" x2="17.678" y2="17.678"/>
-        </svg>
-      </div>
-	
-
-	<div class="internal-nav-links-wrapper">
-
-		<a href="{{ site.baseurl}}/" class="internal-link-wrapper">
-			<div class="links-titles-wrapper">
-				<h5>About</h5>
-				<small>Who is Carla?</small>
-			</div>
-			<div class="internal-link-icon internal-link-icon-home"></div>
-		</a>
-
-		<a href="{{ site.baseurl}}/casestudies" class="internal-link-wrapper" class="confirmation">
-			<div class="links-titles-wrapper">
-				<h5>Projects</h5>
-				<small>What is the process?</small>
-			</div>
-			<div class="internal-link-icon internal-link-icon-case-studies"></div>
-		</a>
-
-		<a href="{{ site.baseurl}}/blog" class="internal-link-wrapper">
-			<div class="links-titles-wrapper">
-				<h5>Blog</h5>
-				<small>What does she think?</small>
-			</div>
-			<div class="internal-link-icon internal-link-icon-blog"></div>
-		</a>
-
-
-		</div>
-		<hr>
-
-	<div class="external-nav-links-wrapper">
-		<a href="" target="_blank" class="external-link-wrapper">
-			<h6>GitHub</h6>
-			<div class="external-link-icon external-link-icon-github"></div>
-		</a>
-		<a href="" target="_blank" class="external-link-wrapper">
-			<h6>Twitter</h6>
-			<div class="external-link-icon external-link-icon-twitter"></div>
-		</a>
-		<a href="" target="_blank" class="external-link-wrapper">
-			<h6>something</h6>
-			<div class="external-link-icon external-link-icon-something"></div>
-		</a>
-	</div>
-</div>
-</nav>
-
-
-<!---======pop up====--->
-<div class="popup-bg">
-  <div class="popup">
-   <h3>Pop Up</h3>
-   <p>Hi there! thanks for visiting my portfolio! I'm still in the process of adding projects thats why the page is a bit empty. Soonish will be done thanks! Now you can click and see what I got so far
-	</p>
-	<iframe src="https://giphy.com/embed/OUKCUp9wO8a52"></iframe>
-    <span class="close-btn">X</span>
+<nav class="z-depth-0 transparent">
+  <div class="nav-wrapper transparent s12">
+    <a href="/" class="brand-logo"><img src="/assets/images/logo.png"  style="max-width: 58px; max-height:58px;"alt="website logo" /></a>
+    <a href="" data-activates="mobile-demo" class="button-collapse large">
+      <i class="material-icons black-text sandwich">menu</i>
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {% for my_section in site.data.sections %}
+        <li><a href={{my_section[1].url}} class="">{{my_section[0]}}</a><div class="nav-underline"></div></li>
+      {% endfor %}
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      {% for my_section in site.data.sections %}
+        <li><a href={{my_section[1].url}}>{{my_section[0]}}</a><div class="nav-underline"></div></li>
+      {% endfor %}
+    </ul>
   </div>
-
-</div>
+</nav>

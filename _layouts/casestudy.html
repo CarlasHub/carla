@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<header class="case-studies-header-main" style="background-image: url('{{ site.baseurl}}{{page.featImage}}');">
+	<div class="overlay-dark"></div>
+	{% include nav.html %}
+	<div class=" case-studies-title">
+		<h1>Case Studies</h1><br>
+		<h3>{{page.title}}</h3>
+		<br><br>
+		<a class="color-game" href="#bio">See challenge</a>
+		<a class="color-game" href="{{page.github}}">See the source code</a>
+	</div>
+</header>
+{{content}}

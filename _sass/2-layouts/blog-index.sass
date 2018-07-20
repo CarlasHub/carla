@@ -1,0 +1,125 @@
+header.blog-index-header-main
+	position: relative
+	z-index: 1
+	display: flex
+	flex-direction: column
+	align-items: left
+	justify-content: center
+	width: 100%
+	height: 100vh
+	background:
+		size: cover
+		position: center center 
+		repeat: no-repeat
+	//border-bottom: solid $white 1px 
+	@media screen and (max-width: 800px)
+		align-items: center 
+		justify-content: center
+.overlay-blog
+	position: absolute
+	z-index: 2
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: $black //
+	opacity: 0.5
+.blog-index-title
+	max-width: 600px
+	position: relative
+	z-index: 5
+	text-align: center
+	padding-top: 50px
+	text-align: center
+	@media screen and (max-width: 800px)
+		text-align: center
+	h1.featured-blog-post-title
+		max-width: 600px
+		font-size: 3.125em
+		font-weight: 500
+		line-height: 1.2em
+		padding: 0 20px 5px 20px 
+		color: $white 
+		margin: 30px 30px
+		@media screen and (max-width: 500px)
+			font-size: 2.5em
+		@media screen and (max-width: 400px)
+			font-size: 2.1875em
+		@media screen and ( max-width: 360px)
+			font-size: 1.875em
+	a.read-featured-blog-post
+		color: #266de5
+		font-size: 0.75
+		font-weight: 900
+		padding: 10px
+		border: solid 4px #266de5
+		max-width: 100px
+		border-radius: 3px
+		margin: 0 auto
+		&:hover
+			color: yellow
+			border: solid 4px yellow
+		@media screen and (max-width: 800px)
+			&:hover
+				color: $primaria-blue
+				border: solid 4px $primaria-blue
+
+.blogIndexWrapper
+	width: 100%
+	max-width: 1200px
+	margin: 100px auto 0 auto
+	padding: 0 20px
+	display: flex 
+	flex-direction: row 
+	justify-content: space-around
+	align-items: baseline 
+	flex-wrap: wrap 
+	@media screen and (max-width: 700px)
+		padding: 0
+.blogPostContainer
+	transition: all 0.4s ease-in
+	width: 100%
+	max-width: 320px
+	margin: 0 5px 120px 5px 
+	flex-basis: 320px
+	@media screen and(max-width: 500px)
+		max-width: 100%
+		margin: 0 0 120px 0
+		flex-basis: 100%
+.blogPostFeaturedImg
+	display: block
+	width: 100%
+	height: 200px
+	margin: 0 auto 4px auto
+	background: 
+		size: cover
+		position: center center 
+		repeat: no-repeat
+.blogCategory
+	display: block
+	text-align: center
+	margin: 0 auto 15px auto
+	color: $white
+	text-transform: uppercase
+	//font-family: 
+	font-size: .5em
+	letter-spacing: 1px 	
+.blogTitle
+	display: block 
+	margin: 0 auto 20px auto
+	font-family: $font-stack 
+	font-size: 1.2em
+	font-weight: 500
+	color: yellow
+	text-align: center
+.blogExcerpt	
+	text-align: center
+	margin: auto
+	display: block
+	color: lightgrey
+	font-size: .8em
+	line-height: 2em
+
+
+
+

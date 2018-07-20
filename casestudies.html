@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<header class="case-studies-header-main" style="background-image: url('{{ "/assets/images/blog/keeponcoding.jpg" | relative_url }}');">
+	<div class="overlay-dark"></div>
+	{% include nav.html %}
+	<div class=" case-studies-title">
+		<h1>Case Studies</h1><br>
+		<a class="see-our-story" href="#projects">See More</a>
+	</div>
+</header>
+
+<div class="caseStudiesWrapper">
+	<hr>
+
+	<div class="caseStudyPreview reverse">
+		<div class="text">
+			<h2 >BeachYO App</h2>
+			<p>This is a NODEjs/ express app with CRUD functionality uses a callback functions whose parameters are request and response objects. Stores and retrieves JSON data using MongoDB, a NOSQL database hook up in a sandbox database on mLab, free cloud-hosted "sandbox" database. Data sent through HTTP requests </p>
+			<h6>Web  Design / Development</h6>
+			<a href="{{ "/casestudies/beachyo/" | relative_url }}">View Study</a>
+		</div>
+		<div class="imageWrapper">
+			<img src="{{ "/assets/images/nodeapp.png" | relative_url }}"/>
+		</div>
+		</div>
+		<br>
+
+	<div class="caseStudyPreview">
+		<div class="text">
+			<h2 id="projects">RESTful App</h2>
+			<p>The purpose of this exercise was to be able to map HTTP routes and CRUD (create, read, update, and destroy) using the seven Restful Routes pattern. </p>
+			<h6>Web Development / Server side</h6>
+			<a href="{{ "/casestudies/rest-app/" | relative_url }}">View Study</a>
+		</div>
+		<div class="imageWrapper">
+			<img src="{{ "/assets/images/rest.jpg" | relative_url }}"/>
+		</div>
+		</div>
+	<hr>
+
+	<hr>
+	<div class="caseStudyPreview reverse">
+		<div class="text">
+			<h2 >RGB color guessing game </h2>
+			<p>Exercise to test advanced  Dom Manipulation and event handling in JavaScript  </p>
+			<h6>Web  Design / Development</h6>
+			<a href="{{ "/casestudies/rgbgame/" | relative_url }}">View Study</a>
+		</div>
+		<div class="imageWrapper">
+			<img src="{{ "/assets/images/justcode.jpg" | relative_url }}"/>
+		</div>
+		</div>
+		<br>
+		<div class="caseStudyPreview">
+		<div class="text">
+			<h2 id="projects">Random User Generator</h2>
+			<p>Ajax API - exercise  </p>
+			<h6>Web Development /AJAX</h6>
+			<a href="https://carlashub.github.io/random_user_generator_ajax/">View </a>
+		</div>
+		<div class="imageWrapper">
+			<img src="{{ "/assets/images/randomuser.png" | relative_url }}"/>
+		</div>
+		</div>
+	</div>
+<hr>
+
+<ul>
+  {% for casestudy in site.casestudies %}
+  <li>
+    <a  style=" display: none" href="{{ casestudy.url | relative_url }}">{{ casestudy.company_name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+

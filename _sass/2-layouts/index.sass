@@ -1,0 +1,710 @@
+
+body
+	background: #006788 !important 
+header.header-main
+	position: relative
+	z-index: 1
+	display: flex
+	flex-direction: column
+	align-items: center 
+	justify-content: center
+	width: 100%
+	height: 120vh
+	background-size: cover
+	position: cover
+	background-repeat: no-repeat
+	border-bottom: solid grey 1px
+#mainbtn
+	display: block
+	background: rgba(32, 32, 32, 0.5)//transparent
+	text-shadow: 0 0 15px #379efe
+	animation: blin 0.5s linear, glowh1 1.5s ease-in-out infinite
+	-webkit-animation: blin 0.5s linear, glowh1 1.5s ease-in-out infinite
+	color: #379efe
+	border: solid #379efe 3px
+	margin: 0 auto
+	position: absolute
+	bottom: 200px
+	z-index: 50
+	width: 200px
+	text-align: center 
+	padding: 10px 0
+	border-radius: 4px
+	font-weight: 700
+	@media screen and (max-width: 200px)
+		align-self: center
+		
+
+
+
+.overlay-light
+	position: absolute
+	z-index: 2
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: black//
+	opacity: .6
+
+.home-title
+	position: relative
+	width: 100%
+	z-index: 3
+	text-align: center
+	padding-top: 50px
+	//font-weight: 500
+
+
+
+
+
+
+
+h1
+	font-size: 3.125em
+	padding: 0 20px 0px 20px //will break before the edge
+	//font-family: $font-stack
+	color: white
+	&:hover
+		//color: red
+		text-shadow: 0 0 15px #379efe
+		
+
+h3
+	font-size: 1.25em
+	font-weight: 400
+	line-height: 1.2em
+	color: white
+
+
+a.home-avatar
+	position: absolute
+	bottom: 0px
+	left: 0px
+	right: 0px
+	width: 100px
+	height: 100px
+	border-radius: 100%
+	border-top: solid 1px white
+	margin: auto
+	margin-bottom: -50px
+	//box-shadow: 0px 0px 6px 0px black
+	z-index: 700
+	&:hover 
+		transform: rotate(360deg) scale(2,2)
+		transform: rotate(360deg) scale(2,2)
+		//box-shadow: 0px 5px 0px 5px black
+		//transform: scale(2,2)
+	background:
+		//image: url('assets/images/profilepic.jpg')
+		size: cover
+		position: center center 
+		repeat: no-repeat
+	@media screen and (max-width: 355px)
+		height: 75px
+		width: 75px
+		margin-bottom: -63px
+
+.about 
+	background: #006788 
+	margin-top: -150px
+	width: 70%
+	min-height: 750px
+	margin-left: auto
+	margin-right: auto
+	border-radius: 2px 2px
+	border: solid 2px grey
+	a
+		color: #1a233a
+		left: 10px
+
+		
+
+	.who-is-she
+		display: block
+		position: relative
+		top: 150px
+		max-width: 600px
+		height: 100%
+		margin: 140px auto 100px auto
+		padding: 0 20px
+		color: white
+		text-overflow: ellipsis
+		@media screen and (max-width: 455px)
+			position: relative
+			top: 100px
+		h2
+			margin: -100px auto 0px auto
+			padding-bottom: 17px
+			text-align: center
+			font-family: $font-stack
+			font-size:  25px
+			font-weight: 700
+			line-height: 2.5em
+			text-align: justify
+			text-justify: inter-word
+			color: #1a233a
+			text-align: center
+			transition: all 0.15s ease-in-out
+			//text-shadow: 0 0 15px red
+			animation: blin 0.5s linear, glowh1 1.5s ease-in-out infinite
+			//-webkit-animation: blin 0.5s linear, glowh1 1.5s ease-in-out infinite
+			&:hover
+				opacity: 1
+			@media screen and (max-width: 655px)
+				position: relative
+				top: 60px
+				font-size:  14px
+			@media screen and (max-width: 405px)
+				position: relative
+				top: 60px
+				
+		p
+
+			font-size: 17px
+			letter-spacing: 1px
+			word-spacing: 7px
+			line-height: 1.8
+			@media screen and (max-width: 655px)
+				position: relative
+				top: 40px
+				font-size:  12px
+			@media screen and (max-width: 405px)
+				position: relative
+				top: 50px
+			@media screen and (max-width: 200px)
+				font-size: 2vw
+
+//Recent Projects 
+.projects
+	background-color: #006788
+
+
+	h2.recent-projects
+		text-align: center 
+		padding-top: 150px
+		color: $white
+		font-size: 30px
+
+
+
+
+	.recent-projects-content-wrapper
+		margin: 0 auto 100px auto
+		max-width: 800px 
+		padding: 60px 20px 0px 20px 
+		display: flex
+		flex-direction: column 
+		align-items: center
+		.project-wrap
+			width: 100% 
+			display: flex
+			justify-content: flex-start
+			.project
+				max-width: 460px
+				min-height: 100px
+				margin: 20px 0
+				display: flex 
+				flex-direction: row
+				justify-content: space-around
+				border-right: solid 1px lightgrey 
+				.project-img
+					background: $primaria-blue
+					width: 100px
+					height: 100px
+					flex: 0 0 100px
+					border-radius: 3px
+					cursor: pointer
+					background:
+						size: cover
+						position: center center 
+						repeat: no-repeat 
+				.project-img-one
+						background:
+							image: url('../images/rest.jpg')
+				.project-img-two
+						background:
+							image: url('../images/colorgame.png')
+				.project-img-three
+						background:
+							image: url('../images/authentication.png')
+				.project-img-four
+						background:
+							image: url('../images/nodeapp.png')
+				a.project-text
+					min-height: 83px
+					height: 100%
+					width: 100%
+					margin-left: 15px 
+					display: flex
+					flex-direction: column 
+					justify-content: space-around
+					padding: 5px 10px 
+					h4
+						color: #0B1922
+						font-size: 1em
+						font-weight: 700
+
+					p
+						line-height: 1.6em
+						font-weight: 500
+						line-height: 2.5em
+						text-align: justify
+						text-justify: inter-word
+						color: $white
+						opacity: 0.7
+						transition: all 0.15s ease-in-out
+						&:hover
+							opacity: 1
+
+		.project-wrap-reverse
+			justify-content: flex-end
+			.project
+				flex-direction: row-reverse
+				border-left: solid 1px lightgrey
+				border-right: none 
+				.project-text
+					text-align: right 
+					margin-right: 15px
+					margin-left: 0
+
+		@media screen and(max-width: 465px)
+			.project-wrap
+				.project
+					flex-direction: column 
+					min-height: 120px
+					borfer: none
+					.project-text
+						margin: 6px 0 0 0
+			.project-wrap-reverse
+				.project
+					align-items: flex
+					flex-direction: column 
+					min-height: 120px
+	#btn-projects 
+		color: white
+		padding: 10px 20px
+		border-radius: 5px
+		border: solid white
+
+
+#icons 
+	text-align: center
+	h3
+		color: #84ce1b
+		font-family: 'Hi Melody', cursive
+		font-size: 2.125em
+
+	i
+		color: white
+		font-size: 70px
+		padding: 0 20px 0 20px
+						
+
+#frontcontainer
+	height: 100vh
+	width: 100%
+	background-image: url("https://images.pexels.com/photos/39393/hand-the-hand-gesture-stick-39393.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	display: table
+	background-attachment: fixed
+	margin-top: 10%
+	@media screen and (max-width: 755px)
+		margin-top: 20%
+	h2
+		color: white
+		font-size: 45px
+		text-align: center
+		font-weight: 900
+		font-family: 'Hi Melody', cursive
+	.container
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		position: relative
+		top: 40px
+		left: 30%
+		margin: 0 auto
+		margin-bottom: 10%
+		width: 200px
+		height: 200px
+		background: white
+		opacity: 1
+		text-align: center
+		border-radius: 50%
+		border: solid white 3px
+		padding: 35px
+		box-shadow: 0px 5px 0px 2px rgba(0,0,0,0.5)
+		animation: run 5s linear 1
+		@media screen and (max-width: 755px)
+			width: 150px
+			height: 150px
+		#mood
+			position: absolute
+			top: 40%
+			right: 40%
+			left: 10%
+			width: 80%
+			opacity: 1
+			outline: none
+			background: white
+			color: #006788
+			border: solid 1px  white
+			border-radius: 5px
+			padding: 9px 25px 
+			font-weight: 900
+			text-align: center
+
+			
+			&:hover
+				opacity: 1
+			@media screen and (max-width: 755px)
+				padding: 5px
+				top: 45%
+				width: 65%
+				left: 20%
+			
+				
+
+		label
+			position: relative
+			font-weight: 900
+			top: 19%
+			margin: 0 auto
+			color: white
+			font-size: 19px
+			padding-botton: 6px
+
+
+		input
+			position: relative
+			text-align: center
+			top: 12%
+			left: 30%
+			max-width: 30%
+			padding: 5px 10px
+			border: none
+			border-radius: 13px
+			font-weight: 600
+			font-size: 12px
+			color: red
+			border: solid red 1px
+			background-color: white
+
+			&:hover
+				background-color: blue
+				border: blue 1px solid
+				color: pink
+
+
+#skills
+	height: 100vh
+	width: 100%
+	background-image: url("https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+	background-size: cover
+	background-repeat: no-repeat
+	display: table
+	background-attachment: fixed
+
+
+#skills ul
+	@media screen and (max-width: 755px)
+		list-style-type: square
+		margin: 0
+		padding: 0
+		display: inline-flex
+		flex-direction: column
+		flex-wrap: wrap
+		height: 300px
+		margin-left: 10%
+		margin-top: 10%
+	@media screen and (max-width: 475px)
+		height: 250px
+		flex-direction: row
+		margin: 10px 0
+
+		
+
+
+
+#skills li
+	color: white
+	padding: 10px 0
+	font-size: 2.3vh
+	text-align: center
+	list-style-type: square
+	&:hover
+		background-color: #C00022
+		color: white
+		padding: 20px
+	@media screen and (max-width: 655px)
+		font-size: 2.3vh
+		margin-left: 0
+		margin: 0 auto
+		padding: 10px 
+
+
+
+#table
+	background: #006788
+	clear: both
+	display: table-cell
+	width: 50%
+	height: 100%
+	float: left
+	@media screen and (max-width: 755px)
+		width: 100%
+		height: 50%
+		
+	h3
+		text-align: center 
+		font-size: 25px
+		font-weight: 900
+	
+
+#fringe
+	width: 100%
+	background: #006788
+	height: 70px
+	a
+		position: absolute
+		left: 45%
+		width: 150px
+		padding: 10px
+		background: #C00022
+		color: white
+		font-weight: 900
+		opacity: 0.6
+		border-radius: 3px
+		border: solid white 1px
+		cursor: pointer
+		text-align: center
+
+
+	
+#skills a:hover
+	opacity: 1
+
+#skills h3
+	color: lightgrey
+
+#goals
+	width: 30%
+	height: 100%
+	border: solid black
+	display: table-cell
+	overflow: hidden
+	float: right
+	margin-right: 50px
+	margin-top: 10%
+	background-color: rgba(0, 0, 0, 0.6)
+	text-align: center
+	@media screen and (max-width: 855px)
+	margin: 0
+	width: 50%
+	height: 55%
+	margin-top: 15%
+	@media screen and (max-width: 655px)
+		width: 100%
+		height: 50%
+		margin: 0
+	
+	h3
+		color: white
+		font-size: 30px
+		margin-top: 20%
+	p
+		color: lightgrey
+		font-weight: 900
+	&:hover
+		background: black
+		color: white
+		border-radius: 50%
+	#angular
+		display: inline
+		backgound: black
+		max-width: 120px
+		height: 100px
+	
+
+
+#background
+	background-image: url("https://aeflul.pt/wp-content/uploads/2017/12/slide1.png")
+	height: 100vh
+	width: 100%
+	margin-top: 20%
+	background-color: black
+	background-size: cover
+	background-repeat: no-repeat
+	display: table
+	background-attachment: fixed
+	#overlay
+		background: rgba(0, 0, 0, 0.8)
+		width: 100%
+		height: 100%
+
+	#education
+		text-align: center
+		background: transparent
+		position: relative
+		margin: 0 auto
+		margin-top: 10%
+		width: 50%
+		height: 100%
+		text-align: center
+		a
+			width: 100px
+			padding: 5px 10px
+			background: #C00022
+			color: white
+			font-weight: 900
+			opacity: 0.6
+			border-radius: 1px
+			border: solid white 1px
+			cursor: pointer
+			position: absolute
+			bottom: 180px
+			left: 40%
+			right: 50%
+			&:hover
+				background: white 
+				color: #C00022
+				opacity: 0.6
+				border: solid #C00022 2px
+		h3
+			display: block
+			margin-top: 10px
+			margin-bottom: 10px
+			font-size: 30px
+			color: #c00022
+			font-weight: 700
+
+
+	#education ul
+		position: absolute
+		margin-top: 10px
+		margin: auto 0
+
+	
+
+	#education li
+		display: inline-block
+		background: transparent
+		padding: 10px 0
+		color: grey
+		font-weight: 700
+		font-size: 12px
+		margin: auto 0
+		text-align: center
+		b
+			font-size: 2.3vh
+			color: white
+		&:hover
+			padding: 20px
+			border: solid white 1px
+#contacts
+	height: 100vh
+	width: 100%
+	background-size: cover
+	background-repeat: no-repeat
+	display: table
+	background-attachment: fixed
+
+#containercontacts
+	display: flex
+	flex-direction: column
+	background-color: rgba(0, 0, 0, 0.5)
+	position: relative
+	top: 100px
+	margin: 0 auto
+	margin-top: 10%
+	width: 70%
+	height: 70%
+	text-align: center
+
+#containercontacts p
+	color: white
+	font-size: 20px
+	margin-top: 13%
+
+		
+
+#containercontacts a
+	width: 70px
+	padding: 4px
+	background: #C00022
+	color: white
+	font-weight: 900
+	opacity: 0.9
+	border: solid white 1px
+	cursor: pointer
+	position: absolute
+	margin-top: 10px
+	left: 45%
+	right: 50%
+	bottom: 0
+
+#email
+	text-decoration: underline
+	cursor: pointer
+	color: lightred!important
+
+#seemydog
+	height: 100vh
+	width: 100%
+	background-image: url("https://media.giphy.com/media/10AVDflAKRV86A/giphy.gif")
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center center
+	display: table
+	background-attachment: fixed
+
+@keyframes run
+	100%
+		transform: rotate(-360deg)
+
+
+.popup-bg
+	position: absolute
+	top: 0
+	left: 0
+	background-color: rgba(0, 0, 0, 0.5)
+	height: 100%
+	width: 100%
+
+
+.popup
+	position: relative
+	top: 20%
+	background-color: white
+	border-radius: 5px
+	margin: 50px auto
+	padding: 20px
+	width: 500px
+	height: 500px
+	z-index: 1000
+	iframe
+		width: 100%
+		height: 50%
+		position: relative
+		top: 100px
+		margin: auto
+		background: black
+
+
+.close-btn
+	background-color: black
+	color: white
+	position: absolute
+	top: 5px
+	right: 10px
+	border-radius: 50%
+	padding: 2px 5px
+	border: solid black 3px
+	z-index: 1000
+	font-weight: 900
+
+

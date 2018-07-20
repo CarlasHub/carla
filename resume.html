@@ -1,14 +1,96 @@
 ---
-layout: not_homepage
-quote: If you call failures experiments, you can put them in your resume and claim them as achievements.
-author: Mason Cooley
+layout: default
 ---
+{% include nav.html %}
+<!--Select page-->
 
-{% include quote.html quote=page.quote author=page.author %}
-
-<div class="row resume-wrapper">
-  <a href="./assets/carlaCV.pdf" title="click to open in pdf viewer" target="_blank">
-    <img src="./assets/images/cv.png" alt="" class="responsive-img resume-img z-depth-2 hoverable">
-    <button class="fill col s8 offset-s2 m4 offset-m4">open as pdf</button>
-  </a>
+<div id="frontcontainer" style="background-image: url('https://images.pexels.com/photos/39393/hand-the-hand-gesture-stick-39393.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+  <h2>Resume</h2>
+  <form class='container'>
+    <select id="mood"  onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <option value="">Select</option> 
+    <option value="#skills">Skillset</option>
+    <option value="#background">Background</option> 
+    <option value="#contacts">Contacts</option>
+    <option value="#seemydog">Cute dog instead</option>
+    </select>
+    <!--input class="SubmitButton" type="submit" name="SUBMITBUTTON" onclick="showPage()"--> 
+  </form>
 </div>
+<!--Skills section -->
+<div id="skills">
+<div id="fringe">
+	<a href="#frontcontainer"> Go back</a>
+</div>
+<div id="table" >
+  <h3>Skillset</h3>
+  <ul>
+
+    <li>Html</li>
+    <li>Css</li>
+    <li>Javascript</li>
+    <li>Jquery</li>
+    <li> Ajax</li>
+    <li>Ruby</li>
+    <li>Jekyll</li>
+    <li>Sass</li>
+    <li>Bootstrap</li>
+    <li>Semantica UI</li>
+    <li>Git</li>
+    <li>Github</li>
+    <li>Command Line</li>
+    <li>NodeJS</li>
+    <li>MongoJS / Mongoose</li>
+    <li>ExpressJS</li>
+    <li>REST</li>
+    <li>APIs</li>
+    <li>NPM</li>
+    <li>Database Associations</li>
+    <li>Authentication</li>
+    <li>PassportJS</li>
+    <li>Authorization</li>
+    <li>Template Languages</li>
+    <li>Databases</li>
+    <li>Authentication</li>
+    <li>UI Design </li>
+    <li>Digital Marketing</li>
+  </ul>
+</div>
+<section id="goals">
+  <h3> Currently doing </h3>
+  <img id="angular" src="https://techchronos.com/wp-content/uploads/SszarkLabs/stack-icon/cywBkaGwkMeDAuJbSt1k.png">
+  <img id="angular" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png">
+  <img id="angular"src="https://www.wired.co.nz/wp-content/uploads/UI-UX-design-logo.png">
+
+  </section>
+</div>
+
+<!--Background-->
+  <div id="background">
+    <div id="overlay">
+    <div id="education">
+      <ul>
+        <h3> Education</h3>
+        
+        <li><b>Double Degree Bachelor's in History and Geography</b>&#8226; Lisbon University, Portugal </li><br><br>
+        <li><b>Life Long Learning Programme</b>&#8226; Ankara University, Turkey</li><br><br>
+        <li><b>M.A in Pedagogy and Practice</b>&#8226; unfinished thesis</li><br><br>
+        <li><b>Web Developer Bootcamp</b>&#8226;full-stack developer course, Udemy</li><br><br>
+   
+      </ul>
+      <!--a href="#frontcontainer"> Go back</a-->
+  </div>
+  </div>
+  </div>
+   <div id="contacts">
+    <div id="containercontacts">
+      <p> Thanks for taking the time to read!</p>
+
+      
+       <p id="email"> carlawlondon@gmail.com</p>
+        <!--a id="top" href="#frontcontainer">Top</a-->
+       </div>
+  </div>
+  <div id="seemydog">
+
+  </div>
